@@ -1,0 +1,7 @@
+*:not(.logo) {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo {
+    font-family: 'Lora', serif;
+}
