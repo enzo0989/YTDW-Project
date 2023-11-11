@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="styles.css">
 
@@ -11,89 +12,99 @@
     <!-- Roboto Condensed font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YTDW</title> 
+    <meta name="description" content="Download YouTube Videos for Free">
+
+    <title>YTDW</title>
 </head>
+
 <body>
     <header id="header">
         <div class="logo">YTDW</div>
-        <nav>
-            <ul class="menu">
-                <li class="menu-item">Downloader</li>
-                <li class="menu-item">Tutorial</li>
-                <li class="menu-item">Contact</li>
-                <li class="menu-item">Language</li> <!-- inside this item should be a menu that lets the user choose a language -->
-            </ul>
+        <nav class="menu">
+            <a href="#downloader-section" class="menu-item">Downloader</a>
+            <a href="#tutorial-section" class="menu-item">Tutorial</a>
+            <a href="#contact" class="menu-item">Contact</a>
+            <div class="menu-item">Language</div>
+            <!-- ^ inside this item should be a menu that lets the user choose a language -->
         </nav>
+
         <div id="theme-switcher"></div>
     </header>
 
+    <main>
 
-    <div id="downloader">
-        <h1 id="download-title">Download Your Video Here</h1>
-        <input  type="url" name="yt-url" id="yt-url" placeholder="Paste your URL here"/>
-        
-        <button id="download-button"><strong>Download</strong></button>
-    </div>
+        <section id="downloader-section">
+            <h1 id="download-title">Download Your Video Here</h1>
+            <input type="url" name="yt-url" id="yt-url" placeholder="Paste your URL here" />
+            <button id="download-button"><strong>Download</strong></button>
+        </section>
 
 
-    <div id="instructions">
-        <h2 id="instructions-title">How to download</h2>
-        <div id="step-one">
-            <div class="icon">icon</div>
-            <p>First, enter to www.youtube.com or use the mobile app and copy the link of a video you would like to download.</p>
-        </div>
+        <section id="tutorial-section">
+            <h2 id="instructions-title">How to download</h2>
+            <div id="step-one">
+                <div class="icon">icon</div>
+                <p>First, enter to www.youtube.com or use the mobile app and copy the link of a video you would like to
+                    download.</p>
+            </div>
 
-        <div id="step-two">
-            <div class="icon">icon</div>
-            <p>Second, paste the URL on the bar and choose one of the options form the menu. You could download the video, 
-                only the audio or choose a specific format.</p>
-        </div>
-        <div id="step-three">
-            <div class="icon">icon</div>
-            <p>Third and last, Click the red button and wait a moment till the download ends. Finally, enjoy your video!</p>
-        </div>
-    </div>
-    
+            <div id="step-two">
+                <div class="icon">icon</div>
+                <p>Second, paste the URL on the bar and choose one of the options form the menu. You could download the
+                    video,
+                    only the audio or choose a specific format.</p>
+            </div>
+            <div id="step-three">
+                <div class="icon">icon</div>
+                <p>Third and last, Click the red button and wait a moment till the download ends. Finally, enjoy your
+                    video!</p>
+            </div>
+        </section>
+    </main>
+
     <footer id="footer">
         <div class="logo">YTDW</div>
-        <div id="contact">
-            <strong>Ways to reach me:</strong>
+        <section id="contact-section">
+            <h3>Ways to reach me:</h3>
             <div class="footer-icon">footer icon Email</div>
             <p><a href="mailto:enzodeveloper01@gmail.com" target="_blank">enzodeveloper01@gmail.com</a></p>
 
             <div class="footer-icon">footer icon Linkedin</div>
             <p><a href="https://www.linkedin.com/in/enzo-ca%C3%B1ete/">https://www.linkedin.com/in/enzo-cañete/</a></p>
-        </div>
+        </section>
 
-        <div id="repository">
-            <strong>Project Repository</strong>
+        <section id="repository-section">
+            <h3>Project Repository</h3>
             <div class="footer-icon">Footer icon github</div>
-            <p><a href="https://github.com/enzo0989/YTDW-Project" target="_blank">https://github.com/enzo0989/YTDW-Project</a></p>
-        </div>
+            <p><a href="https://github.com/enzo0989/YTDW-Project"
+                    target="_blank">https://github.com/enzo0989/YTDW-Project</a></p>
+        </section>
 
-        <div id="feedback">
-            <strong>Send Feedback</strong>
-            <input type="text" placeholder="name"/>
-            <input type="email" placeholder="email"/>
+        <section id="feedback-section">
+            <h3>Send Feedback</h3>
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
             <textarea id="user-feedback" placeholder="Your message..." rows="5" cols="30"></textarea>
-        </div>
+        </section>
 
-        <div id="sitemap">
-            <strong>SiteMap</strong>
+        <section id="sitemap-section">
+            <h3>SiteMap</h3>
             <ul id="pages-list">
                 <li>Downloader</li>
                 <li>Tutorial</li>
                 <li>Contact</li>
             </ul>
-        </div>
-        
+        </section>
+
         <div id="copyright">
             <p>Copyright C 2023 Enzo Cañete</p>
         </div>
     </footer>
 </body>
+
 </html>
