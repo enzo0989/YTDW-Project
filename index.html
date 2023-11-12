@@ -25,15 +25,19 @@
 <body>
     <header id="header">
         <div class="logo">YTDW</div>
-        <nav class="menu">
-            <a href="#downloader-section" class="menu-item">Downloader</a>
-            <a href="#tutorial-section" class="menu-item">Tutorial</a>
-            <a href="#contact" class="menu-item">Contact</a>
-            <div class="menu-item">Language</div>
-            <!-- ^ inside this item should be a menu that lets the user choose a language -->
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#downloader-section" class="nav-item">Downloader</a></li>
+                <li><a href="#tutorial-section" class="nav-item">Tutorial</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+                <li>
+                    <div class="nav-item">Language</div>
+                    <!-- ^ inside this item should be a menu that lets the user choose a language -->
+                </li>
+            </ul>    
         </nav>
 
-        <div id="theme-switcher"></div>
+        <div id="theme-switcher">make later</div>
     </header>
 
     <main>
@@ -46,7 +50,7 @@
 
 
         <section id="tutorial-section">
-            <h2 id="instructions-title">How to download</h2>
+            <h2 id="tutorial-title">How to download</h2>
             <div id="step-one">
                 <div class="icon">icon</div>
                 <p>First, enter to www.youtube.com or use the mobile app and copy the link of a video you would like to
@@ -71,18 +75,23 @@
         <div class="logo">YTDW</div>
         <section id="contact-section">
             <h3>Ways to reach me:</h3>
-            <div class="footer-icon">footer icon Email</div>
-            <p><a href="mailto:enzodeveloper01@gmail.com" target="_blank">enzodeveloper01@gmail.com</a></p>
-
-            <div class="footer-icon">footer icon Linkedin</div>
-            <p><a href="https://www.linkedin.com/in/enzo-ca%C3%B1ete/">https://www.linkedin.com/in/enzo-cañete/</a></p>
+            <div class="footer-icon email-icon">footer icon Email</div>
+            <address id="mail-link">
+                <a href="mailto:enzodeveloper01@gmail.com" target="_blank">enzodeveloper01@gmail.com</a>
+            </address>
+            <div class="footer-icon linkedin-icon">footer icon Linkedin</div>
+            <address id="linkedin-link">
+                <a href="https://www.linkedin.com/in/enzo-ca%C3%B1ete/">https://www.linkedin.com/in/enzo-cañete/</a>
+            </address>
         </section>
 
         <section id="repository-section">
             <h3>Project Repository</h3>
-            <div class="footer-icon">Footer icon github</div>
-            <p><a href="https://github.com/enzo0989/YTDW-Project"
-                    target="_blank">https://github.com/enzo0989/YTDW-Project</a></p>
+            <div class="footer-icon github-icon">Footer icon github</div>
+            <address id="Repository-link">
+                <a href="https://github.com/enzo0989/YTDW-Project"
+                    target="_blank">https://github.com/enzo0989/YTDW-Project</a>
+            </address>
         </section>
 
         <section id="feedback-section">
@@ -94,11 +103,13 @@
 
         <section id="sitemap-section">
             <h3>SiteMap</h3>
-            <ul id="pages-list">
-                <li>Downloader</li>
-                <li>Tutorial</li>
-                <li>Contact</li>
-            </ul>
+            <nav>
+                <ul id="pages-list">
+                    <li>Downloader</li>
+                    <li>Tutorial</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </section>
 
         <div id="copyright">

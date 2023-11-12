@@ -9,14 +9,14 @@
     justify-content: space-between;
 }
 
-.menu {
+.header-nav > ul {
     display: flex;
     align-items: center;
     list-style: none;
     color: #FAFAFA;
 }
 
-.menu-item {
+.nav-item {
     background-color:#3C3C3C;
     padding: 15px 25px;
 }
@@ -41,3 +41,8 @@ a {
     color: #FAFAFA;
 }
 
+#theme-switcher {
+    color: #FAFAFA;
+    border: #CF0000;
+    margin-right: 20px;
+}
