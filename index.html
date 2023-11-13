@@ -24,29 +24,23 @@
 
 <body>
     <header id="header">
-        <div class="logo">YTDW</div>
         <nav class="header-nav">
             <ul>
-                <li><a href="#downloader-section" class="nav-item">Downloader</a></li>
-                <li><a href="#tutorial-section" class="nav-item">Tutorial</a></li>
-                <li><a href="#contact" class="nav-item">Contact</a></li>
-                <li>
-                    <div class="nav-item">Language</div>
-                    <!-- ^ inside this item should be a menu that lets the user choose a language -->
+                <li class="ham-menu">
+                    <label>
+                        <img src="icons/header/menu.svg" alt="Navigation menu" />
+                    </label>
+                    <!--<ul id="ham-menu-list">
+                        <li class="ham-menu-item"><a href="#downloader-section">Downloader</a></li>
+                        <li class="ham-menu-item"><a href="#tutorial-section">Tutorial</a></li>
+                        <li class="ham-menu-item"><a href="#footer">Contact<a></li>
+                        <li><img src="icons/header/globe.svg" alt="language menu" /></li> -->
+                    </ul>
                 </li>
+                <li><div class="logo"><strong>YTDW</strong></div></li>
+                <li><img src="icons/header/moon.svg" alt="Button to change theme" /></li>
             </ul>
         </nav>
-
-        <div class="switch-container">
-            <!-- -->
-            <input type="checkbox" id="switch">
-
-            <!--This works as the background inside the slider -->
-            <div class="switch-color"></div>
-            <!---->
-            <!--Is the circle-->
-            <label for="switch"></label>
-        </div>
     </header>
 
     <main>
@@ -81,7 +75,7 @@
     </main>
 
     <footer id="footer">
-        <div class="logo">YTDW</div>
+        <div class="logo"><strong>YTDW</strong></div>
         <section id="contact-section">
             <h3>Ways to reach me:</h3>
             <div class="footer-icon email-icon">footer icon Email</div>

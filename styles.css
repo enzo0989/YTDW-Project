@@ -1,0 +1,48 @@
+:root {
+    --accent-color: #CF0000;
+    --text-color: #FAFAFA;
+    --dark-color: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo {    
+    background-color: #CF0000;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 70px;
+    height:35px;
+}
+
+.logo strong {
+    font-family: "Lora", sans-serif;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+header {
+    background-color: #252525;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
