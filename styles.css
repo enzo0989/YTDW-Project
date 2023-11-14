@@ -11,38 +11,58 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
-.logo {    
-    background-color: #CF0000;
-    color: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    width: 70px;
-    height:35px;
-}
-
-.logo strong {
-    font-family: "Lora", sans-serif;
-}
-
-li {
-    list-style-type: none;
-    display: inline;
-}
 
 header {
     background-color: #252525;
-    height: 70px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.header-nav {
-    width: 80%;
+.navbar {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items:flex-end;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 5px auto;
+    background-color: #FAFAFA;    
+}
+
+ul.nav-menu {
+    cursor:pointer;
+}
+
+.logo {
+    width: 80px;
+    height: 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    background: #CF0000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+
+#theme-checkbox {
+    opacity: 0;
 }
