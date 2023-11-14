@@ -1,6 +1,7 @@
+/* General Styles */
 :root {
     --accent-color: #CF0000;
-    --text-color: #FAFAFA;
+    --light-color: #FAFAFA;
     --dark-color: #252525;
 }
 
@@ -11,7 +12,20 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
+li {
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor:pointer;
+}
+
+
+/*header styles*/
 header {
     background-color: #252525;
     height: 80px;
@@ -25,28 +39,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items:flex-end;
-}
-
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.bar {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin: 5px auto;
-    background-color: #FAFAFA;    
-}
-
-ul.nav-menu {
-    cursor:pointer;
+    align-items:center;
 }
 
 .logo {
@@ -55,7 +48,7 @@ ul.nav-menu {
     font-size: 1.4rem;
     font-weight: 600;
     color: #fff;
-    background: #CF0000;
+    background: var(--accent-color);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -65,4 +58,56 @@ ul.nav-menu {
 
 #theme-checkbox {
     opacity: 0;
+}
+
+/*----*/
+
+/*Tutorial for the ham menu: https://youtu.be/R00QiudbD4Y?si=yKbqr8ivhk1YGJrU*/
+
+button {
+    background: transparent;
+    border: 3px solid var(--light-color);
+    border-radius: 10px;
+    
+}
+
+button .line {
+    fill: var(--light-color);
+    transition: 
+        y 200ms ease-in 200ms,
+        rotate 200ms ease-in,
+        opacity 0ms 200ms;
+    ;
+    transform-origin: center;
+    /*Transform-origin set the destination of a transition,
+    if not center, the animation will go into weird places.*/
+}
+
+
+button:hover .line {
+    transition: 
+        y 200ms ease-in,
+        rotate 200ms ease-in 200ms,
+        opacity 0ms 200ms;
+    ;
+}
+
+button:hover :is(.top, .bottom) {
+    /* ":is" works like an if statement,
+    if there is an element that has the classes .top or .bottom,
+    the styles are applied.*/
+
+    y: 45;
+}
+
+button:hover .top {
+    rotate:45deg;
+}
+
+button:hover .middle {
+    opacity: 0;
+}
+
+button:hover .bottom {
+    rotate:-45deg;
 }

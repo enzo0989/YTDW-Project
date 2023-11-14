@@ -27,11 +27,25 @@
         <header id="header">
             <nav class="navbar">
                 <ul class="nav-menu">
-                    <div id="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
+                    <button class="ham-menu cursor-pointer" aria-controls="primary-navigation" aria-expanded="false">
+                <svg class="hamburger" viewBox="0 0 100 100" width="40" >
+                    <rect class="line top" 
+                    width="80" 
+                    height="10" 
+                    x="10" y="25" rx="5">
+                    </rect>
+                    <rect class=" line middle"
+                    width="80" 
+                    height="10" 
+                    x="10" y="45" rx="5">
+                    </rect>
+                    <rect class="line bottom"
+                    width="80" 
+                    height="10" 
+                    x="10" y="65" rx="5">
+                    </rect>
+                </svg>
+                    </button>
                     <!--<li class="nav-item">
                     <a href="#downloader-section" class="nav-link">Downloader</a>
                 </li>
@@ -47,20 +61,20 @@
                 </ul>
                 <div class="logo"><span>YTDW</span></div>
                 <div class="theme">
-                    <label for="theme-checkbox" id="theme">
-                        <img src="images/header/moon.svg" alt="image of a moon" >
+                    <label for="theme-checkbox" id="theme" class="cursor-pointer">
+                        <img src="images/header/moon.svg" alt="image of a moon">
                     </label>
                     <input type="checkbox" id="theme-checkbox" />
-                </div>                
+                </div>
             </nav>
         </header>
-
-        <main>
+        
+        <!--<main>
 
             <section id="downloader-section">
                 <h1 id="download-title">Download Your Video Here</h1>
                 <input type="url" name="yt-url" id="yt-url" placeholder="Paste your URL here" />
-                <button id="download-button"><strong>Download</strong></button>
+                <button id="download-button" class="cursor__pointer">Download</button>
             </section>
 
 
