@@ -23,102 +23,124 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav class="header-nav">
-            <ul>
-                <li class="ham-menu">
-                    <label>
-                        <img src="icons/header/menu.svg" alt="Navigation menu" />
-                    </label>
-                    <!--<ul id="ham-menu-list">
-                        <li class="ham-menu-item"><a href="#downloader-section">Downloader</a></li>
-                        <li class="ham-menu-item"><a href="#tutorial-section">Tutorial</a></li>
-                        <li class="ham-menu-item"><a href="#footer">Contact<a></li>
-                        <li><img src="icons/header/globe.svg" alt="language menu" /></li> -->
-                    </ul>
+    <div class="container">
+        <header id="header">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <div id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <!--<li class="nav-item">
+                    <a href="#downloader-section" class="nav-link">Downloader</a>
                 </li>
-                <li><div class="logo"><strong>YTDW</strong></div></li>
-                <li><img src="icons/header/moon.svg" alt="Button to change theme" /></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-
-        <section id="downloader-section">
-            <h1 id="download-title">Download Your Video Here</h1>
-            <input type="url" name="yt-url" id="yt-url" placeholder="Paste your URL here" />
-            <button id="download-button"><strong>Download</strong></button>
-        </section>
-
-
-        <section id="tutorial-section">
-            <h2 id="tutorial-title">How to download</h2>
-            <div id="step-one">
-                <div class="icon">icon</div>
-                <p>First, enter to www.youtube.com or use the mobile app and copy the link of a video you would like to
-                    download.</p>
-            </div>
-
-            <div id="step-two">
-                <div class="icon">icon</div>
-                <p>Second, paste the URL on the bar and choose one of the options form the menu. You could download the
-                    video,
-                    only the audio or choose a specific format.</p>
-            </div>
-            <div id="step-three">
-                <div class="icon">icon</div>
-                <p>Third and last, Click the red button and wait a moment till the download ends. Finally, enjoy your
-                    video!</p>
-            </div>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <div class="logo"><strong>YTDW</strong></div>
-        <section id="contact-section">
-            <h3>Ways to reach me:</h3>
-            <div class="footer-icon email-icon">footer icon Email</div>
-            <address id="mail-link">
-                <a href="mailto:enzodeveloper01@gmail.com" target="_blank">enzodeveloper01@gmail.com</a>
-            </address>
-            <div class="footer-icon linkedin-icon">footer icon Linkedin</div>
-            <address id="linkedin-link">
-                <a href="https://www.linkedin.com/in/enzo-ca%C3%B1ete/">https://www.linkedin.com/in/enzo-cañete/</a>
-            </address>
-        </section>
-
-        <section id="repository-section">
-            <h3>Project Repository</h3>
-            <div class="footer-icon github-icon">Footer icon github</div>
-            <address id="Repository-link">
-                <a href="https://github.com/enzo0989/YTDW-Project"
-                    target="_blank">https://github.com/enzo0989/YTDW-Project</a>
-            </address>
-        </section>
-
-        <section id="feedback-section">
-            <h3>Send Feedback</h3>
-            <input type="text" placeholder="name" />
-            <input type="email" placeholder="email" />
-            <textarea id="user-feedback" placeholder="Your message..." rows="5" cols="30"></textarea>
-        </section>
-
-        <section id="sitemap-section">
-            <h3>SiteMap</h3>
-            <nav>
-                <ul id="pages-list">
-                    <li>Downloader</li>
-                    <li>Tutorial</li>
-                    <li>Contact</li>
+                <li class="nav-item">
+                    <a href="#Tutorial-section" class="nav-link">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-section" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <img src="icons/header/globe.svg" alt="Button to change language" class="header-icon" />
+                </li> -->
                 </ul>
+                <div class="logo"><span>YTDW</span></div>
+                <div class="theme">
+                    <label for="theme-checkbox" id="theme">
+                        <img src="images/header/moon.svg" alt="image of a moon" >
+                    </label>
+                    <input type="checkbox" id="theme-checkbox" />
+                </div>                
             </nav>
-        </section>
+        </header>
 
-        <div id="copyright">
-            <p>Copyright C 2023 Enzo Cañete</p>
-        </div>
-    </footer>
+        <main>
+
+            <section id="downloader-section">
+                <h1 id="download-title">Download Your Video Here</h1>
+                <input type="url" name="yt-url" id="yt-url" placeholder="Paste your URL here" />
+                <button id="download-button"><strong>Download</strong></button>
+            </section>
+
+
+            <section id="tutorial-section">
+                <h2 id="tutorial-title">How to download</h2>
+                <div id="step-one">
+                    <div class="icon">icon</div>
+                    <p>First, enter to www.youtube.com or use the mobile app and copy the link of a video you would like
+                        to
+                        download.</p>
+                </div>
+
+                <div id="step-two">
+                    <div class="icon">icon</div>
+                    <p>Second, paste the URL on the bar and choose one of the options form the menu. You could download
+                        the
+                        video,
+                        only the audio or choose a specific format.</p>
+                </div>
+                <div id="step-three">
+                    <div class="icon">icon</div>
+                    <p>Third and last, Click the red button and wait a moment till the download ends. Finally, enjoy
+                        your
+                        video!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="logo"><span>YTDW</span></div>
+            <section id="contact-section">
+                <h3>Ways to reach me:</h3>
+                <div class="footer-icon email-icon">footer icon Email</div>
+                <address id="mail-link">
+                    <a href="mailto:enzodeveloper01@gmail.com" target="_blank">enzodeveloper01@gmail.com</a>
+                </address>
+                <div class="footer-icon linkedin-icon">footer icon Linkedin</div>
+                <address id="linkedin-link">
+                    <a href="https://www.linkedin.com/in/enzo-ca%C3%B1ete/">https://www.linkedin.com/in/enzo-cañete/</a>
+                </address>
+            </section>
+
+            <section id="repository-section">
+                <h3>Project Repository</h3>
+                <div class="footer-icon github-icon">Footer icon github</div>
+                <address id="Repository-link">
+                    <a href="https://github.com/enzo0989/YTDW-Project"
+                        target="_blank">https://github.com/enzo0989/YTDW-Project</a>
+                </address>
+            </section>
+
+            <section id="feedback-section">
+                <h3>Send Feedback</h3>
+                <input type="text" placeholder="name" id="name" />
+                <input type="email" placeholder="email" id="email" />
+                <textarea id="user-feedback" placeholder="Your message..." rows="5" cols="30"></textarea>
+            </section>
+
+            <section id="sitemap-section">
+                <h3>SiteMap</h3>
+                <nav>
+                    <ul id="pages-list">
+                        <li>Downloader</li>
+                        <li>Tutorial</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </section>
+
+            <div id="copyright">
+                <p>Copyright C 2023 Enzo Cañete</p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
+
+
+<!--
+    Next task:
+    improve Logo: maybe change the color font from #FAFAFA to #FFF or fonts
+-->
